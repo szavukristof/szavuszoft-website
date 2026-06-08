@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Szavuszoft — Karbantartás-irányítási és eszközkezelő rendszer ipari KKV-knak. Magyar nyelvű, moduláris CMMS.">
+    <meta name="keywords" content="CMMS, karbantartás-irányítás, eszközkezelő, IT asset management, ipari KKV, magyar szoftver">
+    <meta name="author" content="Szávu Kristóf">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Szavuszoft — Karbantartás-irányítási és eszközkezelő rendszer">
+    <meta property="og:description" content="Magyar nyelvű, moduláris CMMS ipari KKV-knak. Jelenleg az IT eszközkezelő modul élesben.">
+    <meta property="og:url" content="https://szavuszoft.hu">
+
+    <title>Szavuszoft — Karbantartás-irányítási és eszközkezelő rendszer</title>
+
+    <!-- Inline SVG favicon (nincs külön asset fájl) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230ea5e9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='16' rx='2'/%3E%3Cline x1='7' y1='10' x2='17' y2='10'/%3E%3Cline x1='7' y1='14' x2='13' y2='14'/%3E%3Ccircle cx='17' cy='14' r='1.5' fill='%230ea5e9'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="16" rx="2"/>
+                    <line x1="7" y1="10" x2="17" y2="10"/>
+                    <line x1="7" y1="14" x2="13" y2="14"/>
+                    <circle cx="17" cy="14" r="1.5" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">Szavuszoft</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#mi-ez">Mi ez?</a></li>
+                <li><a href="#funkciok">Funkciók</a></li>
+                <li><a href="#tervek">Tervek</a></li>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Fejlesztés alatt — első ügyfél élesben
+            </div>
+            <h1 class="hero-title">
+                Karbantartás-irányítási és<br>
+                <span class="text-primary">eszközkezelő rendszer</span>
+            </h1>
+            <p class="hero-subtitle">
+                Magyar nyelvű, moduláris CMMS rendszer ipari kis- és középvállalkozásoknak.
+                Az IT eszközöktől a gyártósoron át a járművekig — egy helyen, mobilon is.
+            </p>
+            <div class="hero-cta">
+                <a href="#funkciok" class="btn btn-primary">Mit tud most?</a>
+                <a href="#kapcsolat" class="btn btn-secondary">Lépj kapcsolatba</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mi-ez" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Mi az a Szavuszoft?</h2>
+            <div class="prose">
+                <p>
+                    A <strong>Szavuszoft</strong> egy moduláris karbantartás-irányítási rendszer
+                    (angolul: <em>CMMS — Computerized Maintenance Management System</em>),
+                    amit kifejezetten magyar ipari KKV-knak fejlesztünk.
+                </p>
+                <p>
+                    A nagy nemzetközi rendszerek (SAP PM, IBM Maximo, Limble) gyakran drágák,
+                    angolul vannak, és túl bonyolultak egy 50-300 fős magyar gyártócégnek.
+                    A Szavuszoft ezzel szemben <strong>magyar nyelvű, egyszerű, on-premise</strong>
+                    — az adatok az ügyfélnél maradnak, semmi felhőbe nem kell tölteni.
+                </p>
+                <p>
+                    A Szavuszoft-ban minden eszköz <strong>teljes életútja végigkövethető</strong>
+                    — a beszerzés vagy létrehozás pillanatától egészen a selejtezésig. Minden
+                    eszközmozgás, minden módosítás, minden átadás-átvétel, státusz-változás és
+                    leltár-eredmény automatikusan naplózódik: <strong>ki, mikor, mit változtatott</strong>.
+                    Így bármelyik eszköz teljes története visszanézhető — legyen szó egy garanciális
+                    ügyintézésről, egy leltár-eltérés kivizsgálásáról, egy felelősség-tisztázásról,
+                    vagy egyszerűen csak arról, hogy ki használta utoljára a keresett eszközt.
+                    A teljes szervezet folyamatosan átlátható.
+                </p>
+                <p>
+                    Jelenleg <strong>fejlesztés alatt áll</strong>: az első modul (IT eszközkezelő)
+                    már élesben fut az első ügyfélnél — egy <strong>Eger mellett működő, 150 főt
+                    foglalkoztató lemezipari gyártó és szerelő Kft.</strong>-nél, több telephellyel,
+                    épülettel és üzemegységgel. A többi modult (karbantartás-management,
+                    alkatrész-raktár, helpdesk) a következő hónapokban építjük be.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="funkciok" class="section">
+        <div class="container">
+            <h2 class="section-title">Most mit tud a Szavuszoft?</h2>
+            <p class="section-subtitle">
+                Az <strong>IT Eszközkezelő modul</strong> jelenleg élesben fut. Az alábbi
+                funkciók mind elérhetők és működnek éles használatban.
+            </p>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M2 8h20"/>
+                        </svg>
+                    </div>
+                    <h3>IT eszköz-nyilvántartás</h3>
+                    <p>
+                        Cégen belüli IT eszközök egy helyen: laptopok, monitorok, szerverek,
+                        kiegészítők és eszközök tartozékai. Részleg-, telephely-, terminál-,
+                        használó-szintű hozzárendelés.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                            <line x1="14" y1="14" x2="21" y2="14"/>
+                            <line x1="14" y1="17" x2="18" y2="17"/>
+                            <line x1="14" y1="20" x2="20" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3>Címke nyomtatás</h3>
+                    <p>
+                        Code128 és QR vonalkód címkék közvetlenül Godex (vagy hasonló EZPL-kompatibilis)
+                        címkenyomtatóra. 3 méret: nagy kombinált (50×50 mm), kis Code128 vagy QR (30×10 mm).
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                            <circle cx="12" cy="13" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Leltár — automatikus folyamat</h3>
+                    <p>
+                        A leltár-modul végigvezet az egész folyamaton: új leltár indítása,
+                        az eszközök ellenőrzése <strong>mobil telefonnal vagy tablettel</strong>
+                        (a kamerára felvett <strong>QR kód</strong> azonnal beolvasásra kerül —
+                        gyors és megbízható módszer), majd a végén egy <strong>átfogó értékelő
+                        dokumentum</strong> a vezetőség számára: talált, hiányzó, áthelyezett
+                        és selejtezhető eszközök bontásban, Excel-export formájában.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Teljes rendszer mobilról</h3>
+                    <p>
+                        A Szavuszoft <strong>teljes funkcionalitása elérhető mobil telefonról és
+                        tabletről</strong> — natív alkalmazásként telepíthető Android-ra és iPhone-ra
+                        is (Progressive Web App). Az eszköz-management így bárhol, a helyszínen
+                        kezelhető: új eszköz felvétele, keresése, módosítása, leltár — könnyen,
+                        gyorsan, egyszerűen. Nincs App Store, csak böngésző. Egyetlen URL, mindenkinek.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3>Excel import / export</h3>
+                    <p>
+                        Tömeges adat-felvitel meglévő Excel-listából. Riport-export bármely
+                        szűréshez. Idempotens import — biztonságosan újra-futtatható.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Jogosultság-kezelés</h3>
+                    <p>
+                        Capability-alapú jogosultságok 15 finom-szemcsés permission-nel (eszköz-olvasás,
+                        szerkesztés, selejtezés, leltár, címke-nyomtatás, user-management, audit).
+                        Mindenki csak azt látja és csinálja, amire jogosult.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tervek" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Mit tervezünk?</h2>
+            <p class="section-subtitle">
+                A Szavuszoft moduláris fejlesztés alatt áll. Az alábbi modulok
+                <strong>tervezett</strong> bővítések — még NEM elérhetők, az IT eszközkezelő után jönnek.
+            </p>
+
+            <div class="roadmap-grid">
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>🔧 Karbantartás-management</h3>
+                    <p>
+                        Preventív és korrektív karbantartás: munkalapok, ütemezés, költség-tracking.
+                        Eszközhöz kötött szerviz-történet. Automatikus emlékeztetők
+                        (pl. minden 1000 üzemórán szerviz).
+                    </p>
+                </div>
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>📦 Alkatrész-raktár</h3>
+                    <p>
+                        Spare parts inventory: készletkezelés, minimum-szint figyelés, automatikus
+                        beszerzési jelzés. Kapcsolat a karbantartás-modullal (munkalap → felhasznált
+                        alkatrész).
+                    </p>
+                </div>
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>🎫 Helpdesk modul</h3>
+                    <p>
+                        Hibajegy-rendszer: alkalmazottak közvetlenül bejelenthetnek IT- vagy
+                        karbantartási problémákat. Automatikus assignment, SLA-tracking, eszkaláció.
+                    </p>
+                </div>
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>👷 Munkatárs-management</h3>
+                    <p>
+                        Technikusok, képzettségek, műszakok, szakértelem-mátrix. Munkalap-routing
+                        a megfelelő szakemberhez. Kapacitás-tervezés.
+                    </p>
+                </div>
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>📊 Riportok és KPI-k</h3>
+                    <p>
+                        MTBF (átlagos meghibásodási idő), MTTR (átlagos javítási idő),
+                        eszköz-rendelkezésre állás, karbantartási költség / részleg / év,
+                        downtime-cost számítás. Vezetői dashboard.
+                    </p>
+                </div>
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>📅 Karbantartási naptár</h3>
+                    <p>
+                        Vizuális ütemezés: egy hét / hónap nézet, ki mikor mit csinál,
+                        melyik eszközön. Konfliktus-felismerés. Mobil sync.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="roadmap-note">
+                <p>
+                    <strong>Időkeret:</strong> A modulok bővítése egyenként 2-4 hét fejlesztést igényel,
+                    az igények és customer-feedback alapján prioritáljuk. Ha érdekel egy konkrét modul
+                    bevezetése, <a href="#kapcsolat">vedd fel velünk a kapcsolatot</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Kik vagyunk?</h2>
+            <div class="prose">
+                <p>
+                    A Szavuszoft fejlesztője <strong>Szávu Kristóf</strong>, IT-szakember és
+                    autodidakta szoftverfejlesztő. A szoftver az első ügyfélnél végzett napi
+                    munkából nőtt ki — valódi problémákra, valódi felhasználói visszajelzéssel.
+                </p>
+                <p>
+                    A Szavuszoft <strong>nem egy nagy SaaS-cég</strong>. Egy célzott, koncentrált,
+                    magyar ipari KKV-fókuszú szoftver, amit kis lépésekben, az ügyfelekkel együtt
+                    építünk. Ha érdekel egy ilyen modell, vedd fel velünk a kapcsolatot.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kapcsolat" class="section section-cta">
+        <div class="container">
+            <h2 class="section-title-white">Érdekel a Szavuszoft?</h2>
+            <p class="section-subtitle-white">
+                Demo-bemutatás, árajánlat, vagy csak egy kérdés —
+                írj nekünk emailben:
+            </p>
+            <a href="mailto:info@szavuszoft.hu?subject=%C3%89rdekl%C5%91d%C3%A9s%20%E2%80%94%20Szavuszoft" class="email-button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                info@szavuszoft.hu
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="16" rx="2"/>
+                        <line x1="7" y1="10" x2="17" y2="10"/>
+                        <line x1="7" y1="14" x2="13" y2="14"/>
+                        <circle cx="17" cy="14" r="1.5" fill="currentColor"/>
+                    </svg>
+                    <span class="logo-text">Szavuszoft</span>
+                </div>
+                <p class="footer-tagline">
+                    Karbantartás-irányítási és eszközkezelő rendszer ipari KKV-knak.
+                </p>
+            </div>
+            <div>
+                <h4>Navigáció</h4>
+                <ul>
+                    <li><a href="#mi-ez">Mi ez?</a></li>
+                    <li><a href="#funkciok">Funkciók</a></li>
+                    <li><a href="#tervek">Tervek</a></li>
+                    <li><a href="#kapcsolat">Kapcsolat</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Kapcsolat</h4>
+                <p><a href="mailto:info@szavuszoft.hu">info@szavuszoft.hu</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Szávu Kristóf. Minden jog fenntartva. — Készült Magyarországon ❤️</p>
+        </div>
+    </footer>
+
+</body>
+</html>
