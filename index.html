@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Szavuszoft — Karbantartás-irányítási és eszközkezelő rendszer ipari KKV-knak. Magyar nyelvű, moduláris CMMS önkiszolgáló portállal, digitális átadás-átvétellel.">
-    <meta name="keywords" content="CMMS, karbantartás-irányítás, eszközkezelő, IT asset management, ipari KKV, magyar szoftver, átadás-átvétel, digitális aláírás, önkiszolgáló portál, leltár, on-premise">
+    <meta name="description" content="Szavuszoft — Karbantartás-irányítási és eszközkezelő rendszer ipari KKV-knak. Magyar nyelvű, moduláris CMMS önkiszolgáló portállal, digitális átadás-átvétellel, ütemezett karbantartással, hibabejelentéssel, karbantartói workflow-val.">
+    <meta name="keywords" content="CMMS, karbantartás-irányítás, eszközkezelő, IT asset management, gépnyilvántartás, hibabejelentés, ütemezett karbantartás, ipari KKV, magyar szoftver, átadás-átvétel, digitális aláírás, önkiszolgáló portál, leltár, on-premise, SAP integráció, érintésvédelmi felülvizsgálat">
     <meta name="author" content="Szávu Kristóf">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Szavuszoft — Karbantartás-irányítási és eszközkezelő rendszer">
-    <meta property="og:description" content="Magyar nyelvű, moduláris CMMS ipari KKV-knak. Önkiszolgáló portál, digitális átadás-átvétel, mobil leltár — az IT eszközkezelő modul már élesben.">
+    <meta property="og:description" content="Magyar nyelvű, moduláris CMMS ipari KKV-knak. Élesben: IT-eszközkezelés, gépnyilvántartás (1500+), ütemezett karbantartás, hibabejelentés és karbantartói workflow.">
     <meta property="og:url" content="https://szavuszoft.hu">
 
     <title>Szavuszoft — Karbantartás-irányítási és eszközkezelő rendszer</title>
@@ -58,6 +58,8 @@
             <p class="hero-subtitle">
                 Magyar nyelvű, moduláris CMMS rendszer ipari kis- és középvállalkozásoknak.
                 Az IT eszközöktől a gyártósoron át a járművekig — egy helyen, mobilon is.
+                Élesben: IT-eszközkezelés, gépnyilvántartás, ütemezett karbantartás,
+                hibabejelentés és karbantartói workflow.
             </p>
             <div class="hero-cta">
                 <a href="#funkciok" class="btn btn-primary">Mit tud most?</a>
@@ -92,11 +94,14 @@
                     A teljes szervezet folyamatosan átlátható.
                 </p>
                 <p>
-                    Jelenleg <strong>fejlesztés alatt áll</strong>: az első modul (IT eszközkezelő)
-                    már élesben fut az első ügyfélnél — egy <strong>Eger mellett működő, 150 főt
-                    foglalkoztató lemezipari gyártó és szerelő Kft.</strong>-nél, több telephellyel,
-                    épülettel és üzemegységgel. A többi modult (karbantartás-management,
-                    alkatrész-raktár, helpdesk) a következő hónapokban építjük be.
+                    A rendszer <strong>élesben fut</strong> az első ügyfélnél — egy
+                    <strong>Eger mellett működő, 150 főt foglalkoztató lemezipari gyártó és
+                    szerelő Kft.</strong>-nél, több telephellyel, épülettel és üzemegységgel.
+                    Az élesben futó modulok: <strong>IT eszközkezelő, gépnyilvántartás
+                    (1500+ gép SAP-integrációval), ütemezett karbantartás,
+                    hibabejelentés + karbantartói workflow, digitális átadás-átvétel-cseréikkel</strong>.
+                    A további modulok (alkatrész-raktár, vezetői KPI-riportok,
+                    vizuális karbantartási naptár) fejlesztés alatt.
                 </p>
             </div>
         </div>
@@ -106,7 +111,8 @@
         <div class="container">
             <h2 class="section-title">Most mit tud a Szavuszoft?</h2>
             <p class="section-subtitle">
-                Az <strong>IT Eszközkezelő modul</strong> jelenleg élesben fut. Az alábbi
+                Az IT eszközkezelő, gépnyilvántartás, ütemezett karbantartás és
+                hibabejelentés-modulok mind <strong>élesben futnak</strong>. Az alábbi
                 funkciók mind elérhetők és működnek éles használatban.
             </p>
 
@@ -292,11 +298,128 @@
                     </div>
                     <h3>Jogosultság-kezelés</h3>
                     <p>
-                        Capability-alapú jogosultságok <strong>22 finom-szemcsés permission-nel</strong>
-                        (eszköz olvasás/írás/selejtezés, személyek, leltár, címke-nyomtatás,
-                        user-management, HR-átadás, önkiszolgáló, cégadatok, audit). Mindenki
-                        csak azt látja és csinálja, amire jogosult. Tetszőleges role-ok
-                        összeállíthatók.
+                        Capability-alapú jogosultságok <strong>40+ finom-szemcsés permission-nel</strong>
+                        modul-csoportokra rendezve: IT-eszközök, gépek, személyek, leltár,
+                        címke-nyomtatás, user-management, HR-átadás, önkiszolgáló, cégadatok,
+                        karbantartás (feladatok végrehajtás, hibajegy-átvétel, vezetői hozzárendelés),
+                        raktár- és karbantartási egység szintű hozzáférés, audit-log.
+                        Mindenki csak azt látja és csinálja, amire jogosult.
+                    </p>
+                </div>
+
+                <!-- ============================================================ -->
+                <!-- Karbantartás-modul (Sprint 44 + Sprint 55) — élesben -->
+                <!-- ============================================================ -->
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Gépnyilvántartás — 1500+ gép</h3>
+                    <p>
+                        A teljes géppark digitális nyilvántartása: fröccsöntők, sajtók, hegesztők,
+                        kéziszerszámok, RCD-k, biztonsági tápforrások, menekülési útvonal-táblák.
+                        Több telephelyen, üzemegységben, munkahelyen. <strong>SAP-import
+                        1500+ géppel</strong> (IFS cikkek + dolgozók retroaktív hozzárendelése),
+                        kézi felvétel egyedi darabokra. Gyári szám, cikkszám, gyártó/modell,
+                        beszerzési adatok, garancia-lejárat, ownership.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Ütemezett karbantartás</h3>
+                    <p>
+                        Preventív karbantartás cron-alapú automatikus feladat-generálással.
+                        Sablonos checklist a megelőző műveletekhez (olajcsere, szűrő, kalibráció).
+                        Éves érintésvédelmi felülvizsgálat elektromos kéziszerszámokra,
+                        RCD-mérés, tápforrás- és menekülési tábla-ellenőrzés.
+                        <strong>Karbantartási bizonylat</strong> auto-generált sorszámmal
+                        (M-YYYY-NNNN) minden lezárt feladathoz — nyomtatható, PDF exportálható.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Hibabejelentés</h3>
+                    <p>
+                        Kétirányú hibabejelentés: műszakvezetők a gyártósori gépekre,
+                        IT-userek saját eszközükre önkiszolgálóan a főoldalról.
+                        3-lépéses wizard, kliens-oldali fotó-optimalizálás (max 3 kép, 1280px),
+                        súlyosság-választás. <strong>Kérdés-válasz szál</strong> a bejelentő
+                        és a karbantartó között (e-mail értesítéssel + új-üzenet-badge-dzsel).
+                        Automatikus duplikáció-figyelmeztetés nyitott azonos jegynél.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="6 3 20 12 6 21 6 3"/>
+                        </svg>
+                    </div>
+                    <h3>Karbantartói workflow</h3>
+                    <p>
+                        Karbantartói felület a hibajegyekre: <strong>átvétel → munka → felfüggesztés
+                        (pl. alkatrészre várva) → folytatás → lezárás</strong>. Több session
+                        aszinkron, mindegyikben külön hozzáadható kollégák, aktuális-időmérő.
+                        Vezetői hozzárendelés joga (utolsó-nyer). Lezáráskor kötelező
+                        megoldás-leírás. <strong>Automatikusan generálódik egy karbantartási
+                        feladat-bejegyzés</strong> — a gép történet-listáján az ütemezett
+                        karbantartások mellett megjelenik.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="17 1 21 5 17 9"/>
+                            <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                            <polyline points="7 23 3 19 7 15"/>
+                            <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                        </svg>
+                    </div>
+                    <h3>Csere-wizard és meghatalmazás</h3>
+                    <p>
+                        Amikor egy dolgozó hibás gépet lead és újat vesz fel egy alkalommal:
+                        <strong>egyetlen aláírás, két jegyzőkönyv</strong> (visszavétel + kiadás)
+                        egy 4 lépéses wizardban. Meghatalmazás-flow, ha a tulajdonos nincs jelen:
+                        kolléga hozza le a hibás gépet, indoklás + meghatalmazott aláírása.
+                        Csoportos gép-átadás raktár és karbantartási egység között
+                        (több gép egy jegyzőkönyvvel).
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                            <line x1="3" y1="20" x2="21" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3>Karbantartási történet</h3>
+                    <p>
+                        Minden gép adatlapján egy egyesített időrendi napló:
+                        <strong>ütemezett karbantartások + hibajavítások + csere-átadások +
+                        aktuális nyitott hibajegyek egy helyen</strong>. Színkódolt kártyák,
+                        szűrő kategóriánként. A hibajavítás-eseményről visszaugorható link az
+                        eredeti hibabejelentésre. Egy gép teljes életútja átlátható —
+                        ki mikor mit csinált rajta, meddig tartott a javítás, hány session-ben.
                     </p>
                 </div>
 
@@ -309,20 +432,11 @@
             <h2 class="section-title">Mit tervezünk?</h2>
             <p class="section-subtitle">
                 A Szavuszoft moduláris fejlesztés alatt áll. Az alábbi modulok
-                <strong>tervezett</strong> bővítések — még NEM elérhetők, az IT eszközkezelő után jönnek.
+                <strong>tervezett</strong> bővítések — a következő fázisokban épülnek be
+                a jelenleg élesben futó modulok fölé.
             </p>
 
             <div class="roadmap-grid">
-
-                <div class="roadmap-card">
-                    <div class="roadmap-badge">Tervezett</div>
-                    <h3>🔧 Karbantartás-management</h3>
-                    <p>
-                        Preventív és korrektív karbantartás: munkalapok, ütemezés, költség-tracking.
-                        Eszközhöz kötött szerviz-történet. Automatikus emlékeztetők
-                        (pl. minden 1000 üzemórán szerviz).
-                    </p>
-                </div>
 
                 <div class="roadmap-card">
                     <div class="roadmap-badge">Tervezett</div>
@@ -330,25 +444,8 @@
                     <p>
                         Spare parts inventory: készletkezelés, minimum-szint figyelés, automatikus
                         beszerzési jelzés. Kapcsolat a karbantartás-modullal (munkalap → felhasznált
-                        alkatrész).
-                    </p>
-                </div>
-
-                <div class="roadmap-card">
-                    <div class="roadmap-badge">Tervezett</div>
-                    <h3>🎫 Helpdesk modul</h3>
-                    <p>
-                        Hibajegy-rendszer: alkalmazottak közvetlenül bejelenthetnek IT- vagy
-                        karbantartási problémákat. Automatikus assignment, SLA-tracking, eszkaláció.
-                    </p>
-                </div>
-
-                <div class="roadmap-card">
-                    <div class="roadmap-badge">Tervezett</div>
-                    <h3>👷 Munkatárs-management</h3>
-                    <p>
-                        Technikusok, képzettségek, műszakok, szakértelem-mátrix. Munkalap-routing
-                        a megfelelő szakemberhez. Kapacitás-tervezés.
+                        alkatrész, költség-tracking). Szervíz- és beszállító-kartotékok
+                        elérhetőség-adatokkal.
                     </p>
                 </div>
 
@@ -364,10 +461,41 @@
 
                 <div class="roadmap-card">
                     <div class="roadmap-badge">Tervezett</div>
-                    <h3>📅 Karbantartási naptár</h3>
+                    <h3>📅 Vizuális karbantartási naptár</h3>
                     <p>
-                        Vizuális ütemezés: egy hét / hónap nézet, ki mikor mit csinál,
-                        melyik eszközön. Konfliktus-felismerés. Mobil sync.
+                        Egy hét / hónap nézet: ki mikor mit csinál, melyik gépen.
+                        Terhelés-egyenletesség láthatóvá tétele. Konfliktus-felismerés,
+                        drag-drop átütemezés. Mobil sync.
+                    </p>
+                </div>
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>👷 Szakértelem-mátrix</h3>
+                    <p>
+                        Karbantartók, képzettségek, végzettségek, műszakok, szakértelem-mátrix.
+                        Hibajegy-routing a megfelelő szakemberhez. Kapacitás-tervezés,
+                        műszakhoz igazított hibajegy-értesítés.
+                    </p>
+                </div>
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>🛒 Beszerzés-workflow</h3>
+                    <p>
+                        Új gép rendelés → nyilvántartás → átvétel → első átadás egy folyamatban.
+                        Beszállító-értékelés, garancia-lejárat-figyelés, támogatott (grant)
+                        beszerzések követési kötelezettsége.
+                    </p>
+                </div>
+
+                <div class="roadmap-card">
+                    <div class="roadmap-badge">Tervezett</div>
+                    <h3>⚡ Élesindulási finomítások</h3>
+                    <p>
+                        Egyidejű felhasználó-terhelés stressz-tesztelése, backup-restore
+                        éles adatokból, cert-lejárat automatikus figyelés, retrospektív
+                        hibajegy-task backfill (a Sprint 55.10 előtt lezárt hibajegyekre).
                     </p>
                 </div>
 
