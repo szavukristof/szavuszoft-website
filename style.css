@@ -268,6 +268,22 @@ body {
     font-weight: 600;
 }
 
+.prose ul {
+    margin: 0 0 var(--spacing-sm) 1.5rem;
+    padding-left: 0;
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.prose ul li {
+    margin-bottom: 0.35rem;
+}
+
+.prose em {
+    color: var(--color-text-muted);
+}
+
 /* ===== Feature Grid ===== */
 .feature-grid {
     display: grid;
